@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<HTML {$html_attrs}><HEAD> 
+<META http-equiv="X-UA-Compatible" content="IE=Edge"> <TITLE>{$pagetitle}</TITLE> 
+<META http-equiv="Content-Type" content="text/html; charset=utf-8"> 
+<LINK href="styles/default.css" rel="stylesheet" type="text/css"> {BEGIN rtlCSS}<LINK href="styles/defaultRTL.css" rel="stylesheet" type="text/css">{END rtlCSS} {BEGIN styleCSSFiles}<LINK href="{$stylepath}" rel="stylesheet" type="text/css">{END styleCSSFiles} {BEGIN pageCSSFiles}<LINK href="{$pagestylepath}" rel="stylesheet" type="text/css">{END pageCSSFiles} 
+<META name="GENERATOR" content="MSHTML 11.00.9600.17107"></HEAD> 
+<BODY class="{$stylename} function-add" {$bodyattrs}>{BEGIN body}
+{$header} 
+<DIV class="rnr-page">
+<DIV class="rnr-top {$blockclass_top}">
+{BEGIN container_all}
+<DIV class="rnr-c rnr-cv rnr-c-all">
+<DIV class="rnr-brickcontents style1 rnr-b-wrapper {$wrapperclass_add} rnr-wrapper rnr-cbw-add">
+{BEGIN container_add}
+<DIV class="rnr-c rnr-cv rnr-c-add">
+{BEGIN addheader}<DIV class="rnr-brickcontents style2 rnr-b-addheader {$brickclass_addheader}"><SPAN>{$pagetitlelabel students add} </SPAN></DIV>
+{END addheader}{BEGIN message_block}<DIV class="rnr-brickcontents style1 rnr-b-message {$brickclass_message}">
+<DIV class="rnr-message">{$message}</DIV></DIV>
+{END message_block}<DIV class="rnr-brickcontents style1 rnr-b-wrapper {$wrapperclass_fields} rnr-wrapper rnr-cbw-fields">
+{BEGIN container_fields}
+<DIV class="rnr-c rnr-cv rnr-c-fields">
+<DIV class="rnr-brickcontents style1 rnr-b-addfields2_atop {$brickclass_addfields2_atop}">
+<TABLE class="fieldGrid fieldGrid2 edit">
+  <TBODY>
+  <TR>
+    <TD>
+      {BEGIN Photo_fieldblock}<DIV class="rnr-field style1 {$fielddispclass_Photo}" data-fieldname="Photo">
+      <DIV class="rnr-label above">{BEGIN Photo_label}{$label students Photo}{END Photo_label}</DIV>
+      <DIV class="rnr-control style3">{$Photo_editcontrol}</DIV></DIV>
+      {END Photo_fieldblock}{BEGIN SalutationID_fieldblock}<DIV class="rnr-field style1 {$fielddispclass_SalutationID}" data-fieldname="SalutationID">
+      <DIV class="rnr-label above">{BEGIN SalutationID_label}{$label students SalutationID}{END SalutationID_label}</DIV>
+      <DIV class="rnr-control style3">{$SalutationID_editcontrol}</DIV></DIV>
+      {END SalutationID_fieldblock}{BEGIN FirstName_fieldblock}<DIV class="rnr-field style1 {$fielddispclass_FirstName}" data-fieldname="FirstName">
+      <DIV class="rnr-label above">{BEGIN FirstName_label}{$label students FirstName}{END FirstName_label}</DIV>
+      <DIV class="rnr-control style3">{$FirstName_editcontrol}</DIV></DIV>
+      {END FirstName_fieldblock}{BEGIN MiddleName_fieldblock}<DIV class="rnr-field style1 {$fielddispclass_MiddleName}" data-fieldname="MiddleName">
+      <DIV class="rnr-label above">{BEGIN MiddleName_label}{$label students MiddleName}{END MiddleName_label}</DIV>
+      <DIV class="rnr-control style3">{$MiddleName_editcontrol}</DIV></DIV>{END MiddleName_fieldblock}</TD>
+    <TD>
+      {BEGIN LastName_fieldblock}<DIV class="rnr-field style1 {$fielddispclass_LastName}" data-fieldname="LastName">
+      <DIV class="rnr-label above">{BEGIN LastName_label}{$label students LastName}{END LastName_label}</DIV>
+      <DIV class="rnr-control style3">{$LastName_editcontrol}</DIV></DIV>
+      {END LastName_fieldblock}{BEGIN Gender_fieldblock}<DIV class="rnr-field style1 {$fielddispclass_Gender}" data-fieldname="Gender">
+      <DIV class="rnr-label above">{BEGIN Gender_label}{$label students Gender}{END Gender_label}</DIV>
+      <DIV class="rnr-control style3">{$Gender_editcontrol}</DIV></DIV>
+      {END Gender_fieldblock}{BEGIN DOB_fieldblock}<DIV class="rnr-field style1 {$fielddispclass_DOB}" data-fieldname="DOB">
+      <DIV class="rnr-label above">{BEGIN DOB_label}{$label students DOB}{END DOB_label}</DIV>
+      <DIV class="rnr-control style3">{$DOB_editcontrol}</DIV></DIV>
+      {END DOB_fieldblock}{BEGIN CurrentlyStudyingAt_fieldblock}<DIV class="rnr-field style1 {$fielddispclass_CurrentlyStudyingAt}" data-fieldname="CurrentlyStudyingAt">
+      <DIV class="rnr-label above">{BEGIN CurrentlyStudyingAt_label}{$label students CurrentlyStudyingAt}{END CurrentlyStudyingAt_label}</DIV>
+      <DIV class="rnr-control style3">{$CurrentlyStudyingAt_editcontrol}</DIV></DIV>{END CurrentlyStudyingAt_fieldblock}</TD></TR>
+  <TR>
+    <TD colspan="2">&nbsp;&nbsp;	{$Section Admission_Info1}</TD></TR>
+  <TR>
+    <TD 
+      colspan="2">&nbsp;&nbsp;	{$Section Aditional_Info1}</TD></TR></TBODY></TABLE></DIV>
+{BEGIN addbuttons}<DIV class="rnr-brickcontents style2 rnr-b-addbuttons {$brickclass_addbuttons}">{BEGIN save_button}<A class="rnr-button main" href="#" {$savebutton_attrs}>Save</A> {END save_button}{BEGIN cancel_button}<A class="rnr-button" href="#" {$cancelbutton_attrs}>Cancel</A> 
+{END cancel_button}{BEGIN back_button}<A class="rnr-button" href="#" {$backbutton_attrs}>Back to list</A> {END back_button}{BEGIN backToMenu_button}<A class="rnr-button" href="#" {$backToMenubutton_attrs}>Back 
+to menu</A> {END backToMenu_button}</DIV>{END addbuttons}</DIV>{END container_fields}</DIV></DIV> {END container_add}</DIV></DIV> {END container_all}</DIV>
+<DIV class="rnr-middle">
+<DIV class="rnr-left {$blockclass_left}"></DIV>
+<DIV class="rnr-center {$blockclass_center}"></DIV>
+<DIV class="rnr-right {$blockclass_right}"></DIV></DIV>
+<DIV class="rnr-bottom {$blockclass_bottom}"><!--%%bottom%%--> </DIV></DIV>{$footer}{END body} 
+</BODY></HTML>

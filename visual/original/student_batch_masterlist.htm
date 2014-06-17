@@ -1,0 +1,49 @@
+<div {$pageattrs}>
+
+{BEGIN container_masterlistheader}
+<div class="rnr-c rnr-ch rnr-c-masterlistheader">
+
+
+<div  class="style1 rnr-bl rnr-b-masterlistheader {$brickclass_masterlistheader}">	{$pagetitlelabel student_batch masterlist}
+</div>
+
+
+<div class="rnr-hfiller"></div>
+</div>
+{END container_masterlistheader}
+
+
+
+{BEGIN container_mastergrid}
+
+
+
+<table class="rnr-c rnr-cont rnr-c-mastergrid rnr-b-mastergridfields rnr-gridtable" cellpadding="0" >
+	<thead>
+		<tr class="rnr-toprow style1 {$gridHeader_class}" >
+			<th class="{$BatchID_class}">{$label student_batch BatchID}</th>
+			<th class="{$FullName_class}">{$label student_batch FullName}</th>
+			<th class="{$BatchName_class}">{$label student_batch BatchName}</th>
+			<th class="{$AcademicYear_class}">{$label student_batch AcademicYear}</th>
+			<th class="{$Fees_class}">{$label student_batch Fees}</th>
+			<th class="rnr-edge">&nbsp;</th>
+		</tr>
+	</thead>
+	<tbody>
+		<tr class="rnr-row style1">
+			<td class="{$BatchID_class}">{$BatchID_mastervalue}</td>
+			<td class="{$FullName_class}">{$FullName_mastervalue}</td>
+			<td class="{$BatchName_class}">{$BatchName_mastervalue}</td>
+			<td class="{$AcademicYear_class}">{$AcademicYear_mastervalue}</td>
+			<td class="{$Fees_class}">{$Fees_mastervalue}</td>
+			<td class="rnr-edge">&nbsp;</td>
+		</tr>
+	</tbody>
+</table> 
+
+
+
+
+{END container_mastergrid}
+
+</div>
